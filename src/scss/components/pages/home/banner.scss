@@ -1,0 +1,17 @@
+.banner {
+  margin-top: 10rem;
+  &__wrapper {
+    gap: 2rem;
+    border-radius: 3rem;
+    padding: 5rem;
+    color: #fff;
+    background-color: #6b46c1;
+  }
+
+  &__button {
+    border-radius: 1rem;
+    padding: 2rem;
+    color: var(--clr-default-900);
+    background-color: var(--clr-default-100);
+  }
+}

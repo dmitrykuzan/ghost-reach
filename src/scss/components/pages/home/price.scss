@@ -1,0 +1,44 @@
+.price {
+  padding-top: 10rem;
+
+  &__wrapper {
+    gap: 3rem;
+  }
+
+  &__table {
+    table {
+      border: 0.1rem solid var(--clr-default-900);
+      border-collapse: collapse;
+      min-width: 100%;
+
+      thead {
+        tr {
+          border-bottom: 0.1rem solid var(--clr-default-900);
+
+          th {
+            padding: 0.5rem;
+            text-align: start;
+
+            &:first-child {
+              border-right: 0.1rem solid var(--clr-default-900);
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 0.1rem solid var(--clr-default-900);
+
+          td {
+            padding: 0.5rem;
+
+            &:first-child {
+              border-right: 0.1rem solid var(--clr-default-900);
+            }
+          }
+        }
+      }
+    }
+  }
+}

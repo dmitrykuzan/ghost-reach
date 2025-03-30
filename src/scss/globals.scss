@@ -27,6 +27,8 @@ $containerWidth: 120rem;
 
   // Colors
   --clr-default-100: #fff;
+  --clr-bg-main: #f5f2ff;
+  --clr-title-color: #3c315b;
   --clr-default-900: #000000;
 }
 
@@ -36,6 +38,7 @@ $containerWidth: 120rem;
 body {
   font-size: 1.6rem;
   color: var(--clr-default-400);
+  background-color: var(--clr-bg-main);
 
   &.lock {
     overflow: hidden;
@@ -85,6 +88,8 @@ main {
 @import "./ui";
 @import "./stack";
 @import "./components/ui/typography";
+@import "./components/ui/logo";
+@import "./components/ui/menu";
 // Components - UI
 
 // Components - Cards
@@ -93,6 +98,7 @@ main {
 // Components - Sections
 @import "./components/sections/header";
 @import "./components/sections/footer";
+@import "./components/sections/faq";
 // Components - Sections
 
 // Components - Common
@@ -100,4 +106,9 @@ main {
 
 // Components - Pages
 @import "./components/pages/home/hero";
+@import "./components/pages/home/howwork";
+@import "./components/pages/home/features";
+@import "./components/pages/home/price";
+@import "./components/pages/home/newsletter";
+@import "./components/pages/home/banner";
 // Components - Pages

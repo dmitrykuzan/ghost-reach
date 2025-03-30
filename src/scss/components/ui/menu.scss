@@ -1,0 +1,11 @@
+.menu {
+  &__list {
+    gap: 3rem;
+  }
+
+  &__item {
+    &-link {
+      text-transform: uppercase;
+    }
+  }
+}

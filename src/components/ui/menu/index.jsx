@@ -2,11 +2,16 @@ import Link from "next/link";
 import { useTranslation } from "@hooks";
 import { MENU } from "@utils";
 
-export const Menu = () => {
+export const Menu = (props) => {
+  //props
+  const { className } = props;
+
   const t = useTranslation();
 
+  const menuClassName = className ? `menu ${className}` : "menu";
+
   return (
-    <nav className="menu">
+    <nav className={menuClassName}>
       <ul className="menu__list stack align-center">
         {Object.entries(MENU).map(([key, value]) => (
           <li key={key} className="menu__item">

@@ -1,7 +1,8 @@
 export const navigation = {
   en: {
-    one: "1",
-    two: "2",
-    three: "3",
+    howworks: "How It Works",
+    features: "Core Features",
+    pricing: "Pricing",
+    faq: "FAQ",
   },
 };

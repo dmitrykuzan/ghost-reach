@@ -1,0 +1,46 @@
+.newsletter {
+  margin-top: 10rem;
+
+  &__text {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60rem;
+  }
+
+  &__wrapper {
+    gap: 2rem;
+    border-radius: 3rem;
+    padding: 3rem;
+    background-color: var(--clr-default-100);
+  }
+
+  &__form {
+    gap: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    &-input {
+      border: 0.1rem solid var(--clr-default-900);
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 40rem;
+      background-color: var(--clr-bg-main);
+
+      input {
+        outline: none;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: 100%;
+        min-height: 5rem;
+      }
+    }
+
+    &-button {
+      border-radius: 1rem;
+      padding: 1rem;
+      min-height: 5rem;
+      color: var(--clr-default-100);
+      background-color: var(--clr-title-color);
+    }
+  }
+}

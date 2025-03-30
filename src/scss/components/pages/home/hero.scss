@@ -1,0 +1,16 @@
+.hero {
+  padding-top: 5rem;
+
+  &__wrapper {
+    gap: 5rem;
+  }
+
+  &__text {
+    gap: 2.5rem;
+  }
+
+  &__button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
