@@ -4,11 +4,37 @@
   }
 
   &__item {
+    position: relative;
+
     &-link {
       font-family: "AtypDisplay", sans-serif;
       letter-spacing: 0.1rem;
       text-transform: uppercase;
       color: var(--clr-default-400);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.4rem;
+      width: 0;
+      height: 0.2rem;
+      background-color: var(--clr-title-color);
+      transition: width var(--transition);
+    }
+
+    @media (hover) {
+      &:hover::before {
+        width: 100%;
+        transition: width var(--transition);
+      }
+    }
+  }
+
+  &--burger {
+    .menu__list {
+      flex-direction: column;
     }
   }
 }

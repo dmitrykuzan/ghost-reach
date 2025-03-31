@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const HowWork = () => {
   return (
-    <section className="howwork">
+    <section className="howwork" id="howwork">
       <Container>
         <div className="howwork__wrapper stack justify-space-between">
           <div className="howwork__content stack column">
@@ -18,6 +18,7 @@ export const HowWork = () => {
               </Typography>
             </div>
             <Image
+              className="howwork__image"
               src="/img/how-works/how-works.png"
               width="500"
               height="500"

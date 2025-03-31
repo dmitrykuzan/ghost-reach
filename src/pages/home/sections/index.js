@@ -4,3 +4,5 @@ export * from "./features";
 export * from "./price";
 export * from "./newsletter";
 export * from "./banner";
+export * from "./info";
+export * from "./testimonials";

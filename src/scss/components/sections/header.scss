@@ -1,7 +1,31 @@
 .header {
-  padding-top: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding-top: 1.2rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  transition: background-color var(--transition);
 
   &__wrapper {
     gap: 2rem;
+  }
+
+  &__menu {
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  &.active {
+    background-color: rgba(60, 49, 91, 0.1);
+    backdrop-filter: blur(1rem);
   }
 }

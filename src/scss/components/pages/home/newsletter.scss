@@ -1,5 +1,5 @@
 .newsletter {
-  margin-top: 10rem;
+  padding-top: 10rem;
 
   &__text {
     gap: 1.5rem;
@@ -15,6 +15,11 @@
     padding: 3rem;
     box-shadow: 0 0 50px rgba(107, 70, 193, 0.2);
     background-color: #fcfaff;
+
+    @media (max-width: em(767)) {
+      gap: 3rem;
+      padding: 1.5rem;
+    }
   }
 
   &__title {
@@ -36,6 +41,7 @@
       width: 100%;
       max-width: 40rem;
       background-color: var(--clr-default-100);
+      transition: border var(--transition);
 
       input {
         outline: none;
@@ -48,10 +54,26 @@
           font-family: "RMMono", sans-serif;
         }
       }
+
+      &:focus-within {
+        border: 0.1rem solid var(--clr-accent-400);
+      }
     }
 
     &-button {
       min-height: 5rem;
     }
+
+    @media (max-width: em(767)) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: em(1480)) {
+    padding-top: 8rem;
+  }
+
+  @media (max-width: em(992)) {
+    padding-top: 6rem;
   }
 }

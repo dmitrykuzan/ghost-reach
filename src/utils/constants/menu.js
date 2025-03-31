@@ -1,9 +1,9 @@
 export const MENU = {
-  howworks: "/#anchor",
+  howworks: "/#howwork",
 
-  features: "/#anchor",
+  features: "/#features",
 
-  pricing: "/#anchor",
+  pricing: "/#price",
 
-  faq: "/#anchor",
+  faq: "/#faq",
 };

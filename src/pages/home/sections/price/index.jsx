@@ -31,7 +31,7 @@ export const Price = () => {
   const fillWidth = ((value - min) / (max - min)) * 100;
 
   return (
-    <section className="price">
+    <section className="price" id="price">
       <Container>
         <div className="price__wrapper stack column">
           <div className="price__text stack column">

@@ -1,16 +1,43 @@
-import { Container, Logo, Menu } from "@components/ui";
+import { useState, useEffect } from "react";
+import { Burger, BurgerMenu, Container, Logo, Menu } from "@components/ui";
 
 export const Header = () => {
-  return (
-    <header className="header">
-      <Container>
-        <div className="header__wrapper stack align-center justify-space-between">
-          <Logo />
-          <Menu />
+  //** Sticky header
+  const [isScrolled, setIsScrolled] = useState(false);
 
-          <button className="header__button button">Join Now!</button>
-        </div>
-      </Container>
-    </header>
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  //**Menu burger state
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsMenuOpen(true);
+  };
+
+  return (
+    <>
+      <BurgerMenu
+        isMenuOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+      />
+      <header className={`header ${isScrolled ? "active" : ""}`}>
+        <Container>
+          <div className="header__wrapper stack align-center justify-space-between">
+            <Logo />
+            <Menu className="header__menu" />
+
+            <button className="header__button button">Join Now!</button>
+            <Burger openMenu={openMenu} isMenuOpen={isMenuOpen} />
+          </div>
+        </Container>
+      </header>
+    </>
   );
 };

@@ -9,7 +9,7 @@ export const Faq = () => {
   };
 
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <Container>
         <div className="faq__wrapper stack column">
           <Typography className="h2" weight="500" tag="h2" center>

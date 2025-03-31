@@ -55,6 +55,14 @@ body {
     .header {
       overflow: initial;
     }
+
+    .wrapper {
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+      }
+    }
   }
 }
 
@@ -73,6 +81,22 @@ main {
 
   &.no-overflow {
     overflow: initial;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+    pointer-events: none;
+    backdrop-filter: blur(0.85rem);
   }
 }
 
@@ -93,6 +117,8 @@ main {
 @import "./stack";
 @import "./components/ui/typography";
 @import "./components/ui/logo";
+@import "./components/ui/burger";
+@import "./components/ui/burger-menu";
 @import "./components/ui/menu";
 // Components - UI
 
@@ -115,4 +141,6 @@ main {
 @import "./components/pages/home/price";
 @import "./components/pages/home/newsletter";
 @import "./components/pages/home/banner";
+@import "./components/pages/home/testimonials";
+@import "./components/pages/home/info";
 // Components - Pages

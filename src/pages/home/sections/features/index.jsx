@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <Container>
         <div className="features__wrapper stack column">
           <Typography className="h2" weight="500" tag="h2" center>
@@ -146,6 +146,7 @@ export const Features = () => {
               </Typography>
             </li>
           </ul>
+          <button className="features__button button">Start for Free</button>
         </div>
       </Container>
     </section>
