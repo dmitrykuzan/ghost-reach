@@ -18,7 +18,7 @@ export const Footer = () => {
               </div>
 
               <div className="footer__form-bottom stack align-center justify-space-between">
-                <Typography tag="p">
+                <Typography className="footer__form-description" tag="p">
                   Sign up for our newsletter and join the GhostReach.
                 </Typography>
 

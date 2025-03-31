@@ -1,16 +1,79 @@
 .hero {
-  padding-top: 5rem;
+  overflow-x: clip;
+  padding-top: 10rem;
 
   &__wrapper {
-    gap: 5rem;
+    position: relative;
+    gap: 6rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -14rem;
+      top: -28rem;
+      z-index: -1;
+      border-radius: 50%;
+      width: 50rem;
+      height: 50rem;
+      background-color: #aa9fe7;
+      opacity: 0.6;
+      filter: blur(18rem);
+    }
   }
 
-  &__text {
-    gap: 2.5rem;
+  &__text-wrapper {
+    gap: 10rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 144%;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90.97deg, #f5f2ff -10.92%, #3c315b 58.81%);
+    -webkit-background-clip: text;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: fluid(5rem, 3.2rem);
+    line-height: 144%;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(170.97deg, #f5f2ff -10.92%, #3c315b 58.81%);
+    -webkit-background-clip: text;
+  }
+
+  &__bottom-text {
+    gap: 3rem;
+  }
+
+  &__description {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80rem;
+    line-height: 160%;
+  }
+
+  &__type-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    padding-left: 3rem;
+    width: 100%;
+    max-width: 50rem;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 4px 5px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(90.97deg, #f5f2ff -1.92%, #6a5b93 80.81%);
+  }
+
+  &__type {
+    font-family: "RMMono", sans-serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 #000;
+    color: #fff;
   }
 
   &__button {
     margin-right: auto;
     margin-left: auto;
+    min-width: 23rem;
   }
 }

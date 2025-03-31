@@ -1,7 +1,7 @@
 export const navigation = {
   en: {
     howworks: "How It Works",
-    features: "Core Features",
+    features: "Features",
     pricing: "Pricing",
     faq: "FAQ",
   },

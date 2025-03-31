@@ -1,16 +1,27 @@
 .banner {
   margin-top: 10rem;
+
   &__wrapper {
     gap: 2rem;
-    border-radius: 3rem;
+    border-radius: 1.6rem;
     padding: 5rem;
     color: #fff;
     background-color: #6b46c1;
   }
 
+  &__title {
+    font-family: "AtypDisplay", sans-serif;
+    font-size: fluid(4rem, 2.2rem);
+  }
+
   &__button {
     border-radius: 1rem;
     padding: 2rem;
+    width: 100%;
+    max-width: 20rem;
+    font-family: "AtypDisplay", sans-serif;
+    letter-spacing: 0.1rem;
+    text-align: center;
     color: var(--clr-default-900);
     background-color: var(--clr-default-100);
   }

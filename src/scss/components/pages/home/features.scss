@@ -1,13 +1,35 @@
 .features {
-  padding-top: 10rem;
+  padding-top: 15rem;
 
   &__wrapper {
-    gap: 3rem;
+    gap: 5rem;
   }
 
   &__list {
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    gap: 2rem;
+    // border: 0.1rem solid #ccd5df;
+    border-radius: 1.2rem;
+    padding: 3rem;
+    background-color: #f7f9fd;
+
+    &-top {
+      gap: 1rem;
+    }
+
+    &-title {
+      font-family: "AtypDisplay", sans-serif;
+      font-size: fluid(3rem, 2.2rem);
+      color: var(--clr-title-color);
+    }
+
+    &:last-child {
+      grid-column: 1 / 3;
+    }
   }
 }

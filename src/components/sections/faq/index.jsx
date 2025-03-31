@@ -12,108 +12,122 @@ export const Faq = () => {
     <section className="faq">
       <Container>
         <div className="faq__wrapper stack column">
-          <Typography tag="h2" center>
+          <Typography className="h2" weight="500" tag="h2" center>
             Frequently Asked Questions
           </Typography>
 
           <ul className="faq__list stack column">
-            <li className={`faq__item ${activeIndex === 0 ? "active" : ""}`}>
+            <li
+              className={`faq__item stack column ${
+                activeIndex === 0 ? "active" : ""
+              }`}
+            >
               <div className="faq__item-title" onClick={() => handleClick(0)}>
-                <Typography tag="h3">Lorem ipsum dolor sit amet?</Typography>
+                <Typography weight="400" tag="h3">
+                  Lorem ipsum dolor sit amet?
+                </Typography>
               </div>
-              {activeIndex === 0 && (
-                <div className="faq__item-body">
-                  <Typography tag="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga perferendis maxime quas.
-                  </Typography>
-                </div>
-              )}
+              <div className="faq__item-body">
+                <Typography className="p" tag="p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  perferendis maxime quas.
+                </Typography>
+              </div>
             </li>
 
-            <li className={`faq__item ${activeIndex === 1 ? "active" : ""}`}>
+            <li
+              className={`faq__item stack column ${
+                activeIndex === 1 ? "active" : ""
+              }`}
+            >
               <div className="faq__item-title" onClick={() => handleClick(1)}>
-                <Typography tag="h3">
+                <Typography weight="500" tag="h3">
                   Lorem ipsum, dolor sit amet consectetur adipisicing?
                 </Typography>
               </div>
-              {activeIndex === 1 && (
-                <div className="faq__item-body">
-                  <Typography tag="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquam recusandae magni cumque similique expedita labore
-                    sed laborum.
-                  </Typography>
-                </div>
-              )}
+              <div className="faq__item-body">
+                <Typography className="p" tag="p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam recusandae magni cumque similique expedita labore sed
+                  laborum.
+                </Typography>
+              </div>
             </li>
 
-            <li className={`faq__item ${activeIndex === 2 ? "active" : ""}`}>
+            <li
+              className={`faq__item stack column ${
+                activeIndex === 2 ? "active" : ""
+              }`}
+            >
               <div className="faq__item-title" onClick={() => handleClick(2)}>
-                <Typography tag="h3">
+                <Typography weight="500" tag="h3">
                   Lorem ipsum, dolor sit amet consectetur adipisicing?
                 </Typography>
               </div>
-              {activeIndex === 2 && (
-                <div className="faq__item-body">
-                  <Typography tag="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquam recusandae magni cumque similique expedita labore
-                    sed laborum.
-                  </Typography>
-                </div>
-              )}
+              <div className="faq__item-body">
+                <Typography className="p" tag="p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam recusandae magni cumque similique expedita labore sed
+                  laborum.
+                </Typography>
+              </div>
             </li>
 
-            <li className={`faq__item ${activeIndex === 3 ? "active" : ""}`}>
+            <li
+              className={`faq__item stack column ${
+                activeIndex === 3 ? "active" : ""
+              }`}
+            >
               <div className="faq__item-title" onClick={() => handleClick(3)}>
-                <Typography tag="h3">
+                <Typography weight="500" tag="h3">
                   Lorem ipsum, dolor sit amet consectetur adipisicing?
                 </Typography>
               </div>
-              {activeIndex === 3 && (
-                <div className="faq__item-body">
-                  <Typography tag="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquam recusandae magni cumque similique expedita labore
-                    sed laborum.
-                  </Typography>
-                </div>
-              )}
+              <div className="faq__item-body">
+                <Typography className="p" tag="p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam recusandae magni cumque similique expedita labore sed
+                  laborum.
+                </Typography>
+              </div>
             </li>
 
-            <li className={`faq__item ${activeIndex === 4 ? "active" : ""}`}>
+            <li
+              className={`faq__item stack column ${
+                activeIndex === 4 ? "active" : ""
+              }`}
+            >
               <div className="faq__item-title" onClick={() => handleClick(4)}>
-                <Typography tag="h3">
+                <Typography weight="500" tag="h3">
                   Lorem ipsum, dolor sit amet consectetur adipisicing?
                 </Typography>
               </div>
-              {activeIndex === 4 && (
-                <div className="faq__item-body">
-                  <Typography tag="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquam recusandae magni cumque similique expedita labore
-                    sed laborum.
-                  </Typography>
-                </div>
-              )}
+              <div className="faq__item-body">
+                <Typography className="p" tag="p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam recusandae magni cumque similique expedita labore sed
+                  laborum.
+                </Typography>
+              </div>
             </li>
 
-            <li className={`faq__item ${activeIndex === 5 ? "active" : ""}`}>
+            <li
+              className={`faq__item stack column ${
+                activeIndex === 5 ? "active" : ""
+              }`}
+            >
               <div className="faq__item-title" onClick={() => handleClick(5)}>
-                <Typography tag="h3">
+                <Typography weight="500" tag="h3">
                   Lorem ipsum, dolor sit amet consectetur adipisicing?
                 </Typography>
               </div>
-              {activeIndex === 5 && (
-                <div className="faq__item-body">
-                  <Typography tag="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquam recusandae magni cumque similique expedita labore
-                    sed laborum.
-                  </Typography>
-                </div>
-              )}
+              <div className="faq__item-body">
+                <Typography className="p" tag="p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam recusandae magni cumque similique expedita labore sed
+                  laborum.
+                </Typography>
+              </div>
             </li>
           </ul>
         </div>

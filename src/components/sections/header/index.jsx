@@ -8,7 +8,7 @@ export const Header = () => {
           <Logo />
           <Menu />
 
-          <button className="header__button">Join Now!</button>
+          <button className="header__button button">Join Now!</button>
         </div>
       </Container>
     </header>

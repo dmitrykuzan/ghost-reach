@@ -15,6 +15,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.44.3",
     "react-id-swiper": "^4.0.0",
+    "react-type-animation": "^3.2.0",
     "sass-loader": "^13.2.2",
     "stylus": "^0.59.0",
     "stylus-loader": "^7.1.0",
