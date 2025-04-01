@@ -1,16 +1,18 @@
 import { Container, Typography } from "@components/ui";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import Link from "next/link";
 
 export const HowWork = () => {
   const [animationData, setAnimationData] = useState(null);
+
   useEffect(() => {
     fetch("/animation/transparent.json")
       .then((res) => res.json())
       .then((data) => setAnimationData(data))
-      .catch((err) => console.error("Ошибка загрузки Lottie:", err));
+      .catch((err) => console.error("Error Lottie:", err));
   }, []);
   return (
     <section className="howwork" id="howwork">
