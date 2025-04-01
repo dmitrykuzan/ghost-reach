@@ -1,6 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { Container, Typography } from "@components/ui";
 import { useTranslation } from "@hooks";
+import Link from "next/link";
 
 export const Hero = () => {
   const t = useTranslation();
@@ -80,9 +81,9 @@ export const Hero = () => {
             </div>
           </div>
 
-          <a href="#howwork" className="hero__button button">
+          <Link href="#howwork" className="hero__button button">
             Get started with Us
-          </a>
+          </Link>
         </div>
       </Container>
     </section>

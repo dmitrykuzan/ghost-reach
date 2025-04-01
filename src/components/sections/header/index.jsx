@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Burger, BurgerMenu, Container, Logo, Menu } from "@components/ui";
+import Link from "next/link";
 
 export const Header = () => {
   //** Sticky header
@@ -33,9 +34,9 @@ export const Header = () => {
             <Logo />
             <Menu className="header__menu" />
 
-            <a href="#price" className="header__button button">
+            <Link href="/#price" className="header__button button">
               Join Now!
-            </a>
+            </Link>
             <Burger openMenu={openMenu} isMenuOpen={isMenuOpen} />
           </div>
         </Container>

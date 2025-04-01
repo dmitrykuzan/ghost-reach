@@ -1,4 +1,5 @@
 import { Container, Typography } from "@components/ui";
+import Link from "next/link";
 
 export const Banner = () => {
   return (
@@ -8,9 +9,9 @@ export const Banner = () => {
           <Typography className="banner__title" weight="500" tag="h2">
             Ready to rank higher?
           </Typography>
-          <a href="#price" className="banner__button">
+          <Link href="#price" className="banner__button">
             Start For Free
-          </a>
+          </Link>
         </div>
       </Container>
     </section>

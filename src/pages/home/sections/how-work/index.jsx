@@ -1,5 +1,6 @@
 import { Container, Typography } from "@components/ui";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HowWork = () => {
   return (
@@ -100,9 +101,9 @@ export const HowWork = () => {
             </ul>
           </div>
 
-          <a className="button howwork__button" href="#price">
+          <Link className="button howwork__button" href="#price">
             See packages
-          </a>
+          </Link>
         </div>
       </Container>
     </section>
