@@ -44,7 +44,7 @@ export const HowWork = () => {
                   You provide a custom list of websites related to your target
                   keyword and your own site. These could be competitor pages,
                   industry blogs, or any URLs that a real user might browse
-                  before finding your site.
+                  before finding Your site.
                 </Typography>
               </li>
 
