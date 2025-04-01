@@ -1,8 +1,17 @@
 import { Container, Typography } from "@components/ui";
+import Lottie from "lottie-react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export const HowWork = () => {
+  const [animationData, setAnimationData] = useState(null);
+  useEffect(() => {
+    fetch("/animation/transparent.json")
+      .then((res) => res.json())
+      .then((data) => setAnimationData(data))
+      .catch((err) => console.error("Ошибка загрузки Lottie:", err));
+  }, []);
   return (
     <section className="howwork" id="howwork">
       <Container>
@@ -14,18 +23,12 @@ export const HowWork = () => {
                   How It Works ?
                 </Typography>
                 <Typography tag="p" className="p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae, in eos expedita sint fugit molestias quibusdam
-                  laudantium placeat nobis veniam.
+                  Boost your Google/Bing rankings with behavioral traffic that
+                  looks real—because it is. Aged profiles. Contextual warm-up.
+                  Humanlike clicks. Built for SEO enthusiasts.
                 </Typography>
               </div>
-              <Image
-                className="howwork__image"
-                src="/img/how-works/how-works.png"
-                width="500"
-                height="500"
-                alt="Work Flow Image"
-              />
+              <Lottie animationData={animationData} loop={true} />
             </div>
 
             <ul className="howwork__list stack column">
