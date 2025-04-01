@@ -38,8 +38,8 @@ export const Footer = () => {
             </ul>
 
             <Typography className="footer__copy">
-              Copyright © 2023 SEO Rank Hunter. All rights reserved. Contact us
-              at contact@seorankhunter.com
+              Copyright © 2025 GhostReach. All rights reserved. Contact us at
+              contact@ghostreach.com
             </Typography>
           </div>
         </div>

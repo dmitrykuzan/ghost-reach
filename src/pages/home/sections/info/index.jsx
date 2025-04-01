@@ -5,13 +5,6 @@ export const Info = () => {
   return (
     <section className="info">
       <Container>
-        {/* <Image
-          src="/img/ui/dalle.png"
-          width="750"
-          height="175"
-          alt="Signal SEO"
-        /> */}
-
         <div className="info__wrapper stack column">
           <div className="info__item stack column">
             <Typography

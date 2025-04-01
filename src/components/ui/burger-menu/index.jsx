@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 import { Logo, Menu } from "@components/ui";
 import { useOnClickOutside } from "@hooks";
+import Link from "next/link";
 
 export const BurgerMenu = (props) => {
   const { isMenuOpen, onClose } = props;
@@ -27,7 +28,9 @@ export const BurgerMenu = (props) => {
           <div className="burger__menu-list">
             <Menu onClose={onClose} className="menu--burger" />
           </div>
-          <button className="burger__menu-button button">Join Now!</button>
+          <Link href="/#price" className="burger__menu-button button">
+            Join Now!
+          </Link>
         </div>
       </div>
     </div>

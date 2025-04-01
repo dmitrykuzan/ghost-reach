@@ -8,7 +8,9 @@ export const Banner = () => {
           <Typography className="banner__title" weight="500" tag="h2">
             Ready to rank higher?
           </Typography>
-          <button className="banner__button">Start For Free</button>
+          <a href="#price" className="banner__button">
+            Start For Free
+          </a>
         </div>
       </Container>
     </section>

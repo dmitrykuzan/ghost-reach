@@ -5,5 +5,7 @@ export const MENU = {
 
   pricing: "/#price",
 
+  blog: "/blog",
+
   faq: "/#faq",
 };

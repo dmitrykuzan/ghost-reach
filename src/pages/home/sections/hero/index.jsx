@@ -80,7 +80,9 @@ export const Hero = () => {
             </div>
           </div>
 
-          <button className="hero__button button">Get started with Us</button>
+          <a href="#howwork" className="hero__button button">
+            Get started with Us
+          </a>
         </div>
       </Container>
     </section>

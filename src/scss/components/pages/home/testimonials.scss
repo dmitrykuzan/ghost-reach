@@ -1,5 +1,19 @@
 .testimonials {
+  position: relative;
+  overflow-x: clip;
   padding-top: 15rem;
+
+  &__decor {
+    position: absolute;
+    left: -52rem;
+    top: 20rem;
+    z-index: -1;
+    transform: rotate(30deg);
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
 
   &__wrapper {
     gap: 5rem;

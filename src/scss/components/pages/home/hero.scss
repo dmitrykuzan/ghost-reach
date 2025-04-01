@@ -89,6 +89,14 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 4px 5px rgba(0, 0, 0, 0.08);
     background: linear-gradient(90.97deg, #f5f2ff -1.92%, #6a5b93 80.81%);
 
+    @media (max-width: em(767)) {
+      max-width: 50rem;
+
+      svg {
+        display: none;
+      }
+    }
+
     @media (max-width: em(575)) {
       min-height: 9rem;
       background: linear-gradient(90.97deg, #f5f2ff -1.92%, #6a5b93 32.81%);

@@ -1,16 +1,24 @@
 import Head from "next/head";
+
+// Layouts
 import { MainLayout } from "@layouts";
-import { Home } from "@pages/home";
+
+// Pages
+import { ArticleContent } from "@pages/blog/sections";
 
 const Page = () => {
   return (
     <>
       <Head>
-        <title>GhostReach</title>
+        <title>GhostReach | Article</title>
         <meta name="description" content="description" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
         <link rel="icon" href="/img/ui/logo.svg" />
       </Head>
-      <Home />
+      <ArticleContent />
     </>
   );
 };

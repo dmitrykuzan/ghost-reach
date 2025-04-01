@@ -160,7 +160,9 @@ export const Features = () => {
               </Typography>
             </li>
           </ul>
-          <button className="features__button button">Start for Free</button>
+          <a href="#price" className="features__button button">
+            Start for Free
+          </a>
         </div>
       </Container>
     </section>

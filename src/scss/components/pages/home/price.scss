@@ -6,9 +6,17 @@
   &__decor {
     position: absolute;
     right: -78rem;
-    bottom: -25rem;
+    bottom: -14rem;
     z-index: -1;
     transform: rotate(228deg);
+
+    @media (max-width: em(1700)) {
+      bottom: -46rem;
+    }
+
+    @media (max-width: em(767)) {
+      display: none;
+    }
   }
 
   &__wrapper {
@@ -42,7 +50,6 @@
 
     &-fill {
       position: relative;
-
       display: block;
       width: 50%;
       height: 1.5rem;
@@ -82,7 +89,7 @@
     padding: 2.4rem;
     width: 100%;
     max-width: 40rem;
-    background-color: rgba(226, 232, 240, 0.5);
+    background-color: rgba(226, 232, 240);
 
     &-title {
       max-width: 25rem;
@@ -123,6 +130,13 @@
         color: #728095;
       }
     }
+  }
+
+  &__button {
+    gap: 1rem;
+
+    max-width: 25rem;
+    background-color: #0088cc;
   }
 
   @media (max-width: em(1480)) {
