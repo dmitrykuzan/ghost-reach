@@ -154,6 +154,11 @@
     li {
       a {
         font-size: 1.4rem;
+        transition: color var(--transition);
+
+        &:hover {
+          color: var(--clr-accent-400);
+        }
       }
     }
   }

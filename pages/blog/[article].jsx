@@ -16,7 +16,7 @@ const Page = () => {
         <meta property="og:description" content="" />
         <meta property="og:image" content="" />
         <meta property="og:url" content="" />
-        <link rel="icon" href="/img/ui/logo.svg" />
+        <link rel="icon" href="/img/ui/favicon.svg" />
       </Head>
       <ArticleContent />
     </>

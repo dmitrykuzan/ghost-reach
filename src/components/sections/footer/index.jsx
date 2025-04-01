@@ -1,4 +1,5 @@
 import { Container, Logo, Menu, Typography } from "@components/ui";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -30,10 +31,10 @@ export const Footer = () => {
           <div className="footer__bottom stack align-center">
             <ul className="footer__policy stack align-center">
               <li>
-                <a href="">Terms & Conditions</a>
+                <Link href="/terms">Terms & Conditions</Link>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
+                <Link href="/policy">Privacy Policy</Link>
               </li>
             </ul>
 

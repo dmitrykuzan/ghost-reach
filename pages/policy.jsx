@@ -1,16 +1,15 @@
 import Head from "next/head";
 import { MainLayout } from "@layouts";
-import { Home } from "@pages/home";
+import { Policy } from "@pages";
 
 const Page = () => {
   return (
     <>
       <Head>
-        <title>GhostReach | Stealth SERP Clicks</title>
+        <title>GhostReach | Privacy Policy</title>
         <meta name="description" content="description" />
-        <link rel="icon" href="/img/ui/favicon.svg" />
       </Head>
-      <Home />
+      <Policy />
     </>
   );
 };

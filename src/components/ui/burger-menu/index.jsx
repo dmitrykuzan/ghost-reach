@@ -28,7 +28,11 @@ export const BurgerMenu = (props) => {
           <div className="burger__menu-list">
             <Menu onClose={onClose} className="menu--burger" />
           </div>
-          <Link href="/#price" className="burger__menu-button button">
+          <Link
+            onClick={onClose}
+            href="/#price"
+            className="burger__menu-button button"
+          >
             Join Now!
           </Link>
         </div>

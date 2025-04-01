@@ -1,13 +1,34 @@
+import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Container, Typography } from "@components/ui";
-import { useTranslation } from "@hooks";
 import Link from "next/link";
 
-export const Hero = () => {
-  const t = useTranslation();
+// title anim
+let opacityAnim = {};
 
+opacityAnim = {
+  hidden: { opacity: 0 },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: custom * 0.6,
+      duration: 0.8,
+      ease: "linear",
+    },
+  }),
+};
+// title anim
+
+export const Hero = () => {
   return (
-    <section className="hero">
+    <motion.section
+      className="hero"
+      initial="hidden"
+      animate="visible"
+      viewport={{ once: true }}
+      suppressHydrationWarning={true}
+    >
       <Container>
         <div className="hero__wrapper stack column">
           <div className="hero__text-wrapper stack column">
@@ -49,7 +70,11 @@ export const Hero = () => {
                 </g>
               </svg>
             </div>
-            <div className="hero__text stack column">
+            <motion.div
+              className="hero__text stack column"
+              variants={opacityAnim}
+              suppressHydrationWarning={true}
+            >
               <Typography
                 className="hero__title h1"
                 tag="h1"
@@ -78,14 +103,21 @@ export const Hero = () => {
                   Pages).
                 </Typography>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <Link href="#howwork" className="hero__button button">
-            Get started with Us
-          </Link>
+          <motion.div
+            className="hero__button-wrapper"
+            custom={2}
+            variants={opacityAnim}
+            suppressHydrationWarning={true}
+          >
+            <Link href="#howwork" className="hero__button button">
+              Get started with Us
+            </Link>
+          </motion.div>
         </div>
       </Container>
-    </section>
+    </motion.section>
   );
 };
