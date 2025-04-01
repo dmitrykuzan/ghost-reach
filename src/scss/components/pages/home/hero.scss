@@ -77,12 +77,15 @@
   }
 
   &__type-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
     padding: 1rem;
     padding-left: 3rem;
     width: 100%;
-    max-width: 50rem;
+    max-width: 54rem;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 4px 5px rgba(0, 0, 0, 0.08);
     background: linear-gradient(90.97deg, #f5f2ff -1.92%, #6a5b93 80.81%);
 

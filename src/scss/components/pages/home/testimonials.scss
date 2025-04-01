@@ -28,6 +28,10 @@
     padding: 2rem;
     background-color: #fcfaff;
 
+    &-author {
+      gap: 1rem;
+    }
+
     &-title {
       font-size: fluid(3rem, 2rem);
       color: var(--clr-default-400);

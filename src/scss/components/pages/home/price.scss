@@ -1,5 +1,15 @@
 .price {
+  position: relative;
+  overflow-x: clip;
   padding-top: 15rem;
+
+  &__decor {
+    position: absolute;
+    right: -78rem;
+    bottom: -25rem;
+    z-index: -1;
+    transform: rotate(228deg);
+  }
 
   &__wrapper {
     gap: 3rem;

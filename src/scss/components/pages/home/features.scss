@@ -1,6 +1,7 @@
 .features {
+  position: relative;
+  overflow-x: clip;
   padding-top: 15rem;
-
   &__wrapper {
     gap: 5rem;
 
@@ -19,6 +20,14 @@
       flex-direction: column;
       gap: 2rem;
     }
+  }
+
+  &__decor {
+    position: absolute;
+    left: -49rem;
+    bottom: -25rem;
+    z-index: -1;
+    transform: rotate(27deg);
   }
 
   &__item {

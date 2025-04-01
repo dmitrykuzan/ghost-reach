@@ -2,4 +2,15 @@
   flex-shrink: 0;
   width: 100%;
   max-width: 18rem;
+
+  a {
+    .text {
+      font-family: "AtypDisplay", sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(50deg, #f5f2ff -20%, #4f2d9f 90%);
+      -webkit-background-clip: text;
+    }
+  }
 }
