@@ -155,6 +155,51 @@ export const ArticleContent = () => {
                 engineering behavioral credibility.
               </Typography>
             </div>
+
+            <div className="article__table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>GhostReach</th>
+                    <th>SerpClix</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Contextual warm-up</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Fingerprint spoofing</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Clean mobile IPs (geo-specific)</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Session behavior customization</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Bot deteection resistance</td>
+                    <td>✅</td>
+                    <td>⚠️</td>
+                  </tr>
+                  <tr>
+                    <td>Long-term ranking impact</td>
+                    <td>✅</td>
+                    <td>⚠️</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </Container>
